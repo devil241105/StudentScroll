@@ -1,0 +1,492 @@
+html{
+    height: 100vh;
+}
+
+body{
+    background: #5bdea5ba;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .circle{
+    position: fixed;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 8s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+  }
+  
+  .medium{
+    width: 400px;
+    height: 400px;
+    left: 0px;
+    bottom: 150px;
+  }
+  
+  .large{
+    width: 600px;
+    height: 600px;
+    left: -100px;
+    bottom: 50px;
+  }
+  
+  .xlarge{
+    width: 800px;
+    height: 800px;
+    left: -200px;
+    bottom: -50px;
+    z-index: -1;
+  }
+  
+  .xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -300px;
+    bottom: -150px;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+  
+  .shade3{
+    opacity: 0.7;
+  }
+  
+  .shade4{
+    opacity: 0.8;
+  }
+  
+  .shade5{
+    opacity: 0.9;
+  }
+
+  /* .logo{
+    position: absolute;
+  } */
+    .studentscroll{
+        height: 10vh;
+        z-index: 5;
+    }
+
+    .social-logo{
+      position: absolute;
+      display: flex;
+      gap: 3rem;
+      right: 3rem;
+      top: 1rem;
+
+    }    
+    .ig{
+        height: 10vh;
+        transition: transform .2s;
+    }
+
+    .ig:hover {
+      transform: scale(1.2); 
+    }
+
+    .li{
+        height: 10vh;
+        transition: transform .2s;
+    }
+    .li:hover {
+      transform: scale(1.2); 
+    }
+
+    .x{
+        height: 10vh;
+        transition: transform .2s;
+    }
+    .x:hover {
+      transform: scale(1.2); 
+    }
+
+    .gm{
+        height: 10vh;
+        transition: transform .2s;
+    }
+    .gm:hover {
+      transform: scale(1.2); 
+    }
+
+    .header{
+        position: absolute;
+        width: 215%;
+        left: 43vw;
+        top: 20vh;
+        color: #FFF;
+        text-shadow: 12px 10px 12.600000381469727px rgba(0, 0, 0, 0.28);
+        font-family: Yeon Sung;
+        font-size: 140px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -5.6px;
+    }
+
+    .tag-line{
+        position: absolute;
+        width: 20%;
+        left: 69vw;
+        top: 48vh;
+        color: #fff;
+        text-shadow: 12px 3px 5.400000095367432px rgba(0, 0, 0, 0.33);
+        font-family: Jua;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .endline{
+        /* position: absolute;
+        width: 150%;
+        top: 90vh;
+        left: 60vw;
+        color: #FFF;
+        font-family: Inconsolata;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; */
+        display: none;
+    }
+
+    .meeting{
+        position: fixed;
+        width: 18vw;
+        top: 250px;
+        left: 65px;
+        animation: a1 32s infinite;
+    }
+    .p1{
+        position: absolute;
+        font-family: Jua;
+        top: 450px;
+        left: 8vw;
+        animation: a1 32s infinite;
+    }
+    .social{
+        position: fixed;
+        width: 18vw;
+        top: 330px;
+        left: 65px;
+        animation: a2 32s infinite;
+    }
+    .p2{
+        position: absolute;
+        font-family: Jua;
+        top: 450px;
+        left: 8vw;
+        animation: a2 32s infinite;
+    }
+    .working{
+        position: fixed;
+        width: 18vw;
+        top: 280px;
+        left: 65px;
+        animation: a3 32s infinite;
+    }
+    .p3{
+        position: absolute;
+        font-family: Jua;
+        top: 450px;
+        left: 10vw;
+        animation: a3 32s infinite;
+    }
+    .statics{
+        position: fixed;
+        width: 18vw;
+        top: 300px;
+        left: 65px;
+        animation: a4 32s infinite;
+    }
+    .p4{
+        position: absolute;
+        font-family: Jua;
+        top: 450px;
+        left: 10vw;
+        animation: a4 32s infinite;
+    }
+
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }
+
+  @keyframes a1{
+    0%{
+        opacity: 1;
+    }
+    12.25%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+  @keyframes a2{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    37.5%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+  @keyframes a3{
+    0%{
+        opacity: 0;
+    }
+    45%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    62.5%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+  @keyframes a4{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    87.5%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 720px) {
+
+    .medium{
+      width: 200px;
+      height: 200px;
+      left: -150px;
+      bottom: 275px;
+    }
+    
+    .large{
+      width: 300px;
+      height: 300px;
+      left: -200px;
+      bottom: 225px;
+    }
+    
+    .xlarge{
+      width: 400px;
+      height: 400px;
+      left: -250px;
+      bottom: 175px;
+    }
+    
+    .xxlarge{
+      width: 500px;
+      height: 500px;
+      left: -300px;
+      bottom: 125px;
+    }
+
+    .svg{
+      display: none;
+    }
+
+    .studentscroll{
+      height: 10vh;  
+    }
+
+    .social-logo{
+      position: absolute;
+      display: flex;
+      gap: 2rem;
+      top: 90vh;
+      left: 15vw;
+      justify-content: center;
+    }
+
+    /* .ig{
+      top: 88vh;
+      left: -22vw;
+    }
+
+    .li{
+      top: 88vh;
+      left: -14vw;
+    }
+
+    .x{
+      top: 88vh;
+      left: -6vw;
+    }
+
+    .gm{
+      top: 88vh;
+      left: 2vw;
+    } */
+
+    .endline{
+      display: block;
+      top: 10vh;
+    }
+
+    .header{
+      font-size: 6rem;
+      width: 50%;
+      left: 5vw;
+    }
+
+    .tag-line{
+      font-size: 1.5rem;
+      width: 210%;
+      left: 5vw;
+      top: 60vh;
+    }
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+.flex-col{
+    flex-direction: column;
+}
+.gap-2{
+    gap: 0.5rem;
+}
+.font-bold{
+    font-weight: 700;
+}
+footer{
+    padding-top: 4rem; 
+    padding-bottom: 4rem; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.logo{
+    height: auto;
+    width: 15vw;
+}
+.item-center{
+    align-items: center;
+    flex-direction: row;
+}
+.gap-5{
+    gap: 1.25rem;
+}
+.mr-3{
+    margin-top: 3rem;
+}    
+.gray{
+    background-color: rgba(156, 156, 156, 0.349);
+}
+.margintb{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+button{
+    border: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: rgb(29,191,115);
+    color: aliceblue;
+}
+.ankit{
+    background-image: radial-gradient(circle, rgb(2, 2, 139), rgb(0, 0, 61));
+}
+.boink{
+    position: absolute;
+    bottom: 60vh;
+    left: 55vw;
+    color: white;
+}
+.blank{
+    position: relative;
+    top: 14rem;
+    left: .75rem;
+    margin: 1rem;
+    color: white;
+}
+h4{
+    margin-bottom: 2.25rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 640px){
+    .sm\:mx-16 {
+        margin-left: 8rem;
+        margin-right: 8rem
+    }
+    .sm\:mx-15{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .something{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .nothing{
+        font-size: 2.5rem;
+            line-height: 1;
+    }
+  }
